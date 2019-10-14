@@ -376,7 +376,7 @@
     float: left;
     width: 22px;
     height: 22px;
-    background: url(../images/arrow-left.png) no-repeat 0 0 #f8f7f8;
+    background:  no-repeat 0 0 #f8f7f8;
     border: 2px solid black;
     border-radius:50%;
   }
@@ -467,7 +467,7 @@
     float: left;
     width: 22px;
     height: 22px;
-    background: url(../images/arrow-left.png) no-repeat 0 0 #f8f7f8;
+    background:  no-repeat 0 0 #f8f7f8;
     border: 2px solid black;
     border-radius:50%;
   }
@@ -600,7 +600,8 @@
 }
 
 .conceal img{
-    height: 200px;
+    margin-top: -100px;
+    height: 300px;
 }
 .contectMe .container .externalLinks .WeQQ{
     display: none;
