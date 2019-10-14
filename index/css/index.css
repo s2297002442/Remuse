@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+.header .banner .carousel{
+    display: block;
+    width: 100%;
+    height: auto;
+    position:relative;
+    display: none;
+}
+.header .bannerText{
+    position:absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+}
+
+.nav img{
+    display: none;
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    width: 50px;
+    height: auto;
+    background-size: contain;
+    cursor: pointer;
+    border-radius:5px;
+    z-index: 10;
+}
+
+.header .navMenu{
+    margin-top:60px ;
+    padding:40px 0px 30px 0;
+    opacity:0.4;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+    position:absolute;
+    width: 30%;
+    height: 60%;
+    left: right;
+    margin-right: 10%;
+    font-size: 20px;
+    display: none;
+    border-bottom: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:100px 100px 100px 100px;
+}
+.header .navMenu .navbar-nav{
+    padding: 10%;
+}
+
+.header .navMenu .navbar-nav li{
+    color: white;
+    margin-top: 30%;
+    list-style: none;
+}
+.header .navMenu .navbar-nav li a{
+    text-decoration:none;
+}
+
+/* 横向导航栏 */
+.ue-bar{
+    z-index: 101;
+    position: fixed;
+    top: 0px;
+    display: block;
+    background-color: black;
+    width: 100%;
+}
+.ue-bar .ue-bar-nav a,li{
+    list-style: none;
+    text-decoration:none;
+}
+
+.ue-bar .ue-bar-warp {
+    margin: 0% 10% 0% 10%;
+    height: 100px;
+    width: 100%;
+
+}
+
+.ue-bar .ue-bar-warp .ue-bar-logo div{
+    float: left;
+    padding-left:7%;
+    width: 10%;
+    height: 100px;
+}
+
+
+.ue-bar .ue-bar-warp .ue-bar-logo div img{
+    margin: 10px;
+    border-radius:50%;
+}
+
+.ue-bar .ue-bar-warp .ue-bar-nav {
+    float: left;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+.ue-bar .ue-bar-warp .ue-bar-nav ul {
+    margin: 0px auto;
+    height: 60px;
+    list-style: none;
+}
+
+.ue-bar .ue-bar-warp .ue-bar-nav li {
+    display: block;
+    float: right;
+    height: 60px;
+    padding: 0% 6% 0% 6%;
+}
+
+
+.ue-bar .ue-bar-warp .ue-bar-nav em {
+    text-align: cente;
+    display: block;
+    padding-top: 10px;
+    padding: auto;
+    font-size: 120%;
+    width: 100%;
+    color: white;
+    height: 80px;
+
+}
+
+.ue-bar .ue-bar-warp .ue-bar-nav li:hover {
+    color: black;
+    background-color: darkgrey;
+    font-size:  120%;
+}
+
+/* 标题 */
+.heading{
+    clear: both;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.heading > div{
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    background: chocolate;
+    width: 200px;
+    height: 10px;
+    text-align: center;
+}
+
+/* 关于我 */
+.aboutMe{
+    position: relative;
+    display: block;
+    padding-bottom: 100px;
+}
+
+.aboutMe .container .row {
+    width: 70%;
+    margin-left: 15%;
+}
+.aboutMe .container .row .aboutInfo .aboutInfo-props{
+    float: left;
+    width: 20%;
+    margin: 100px auto;
+    padding:  0% 2% 0% 2%;
+
+}
+
+.aboutMe .container .row .aboutInfo .aboutInfo-props .text{
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+}
+
+.aboutMe .container .aboutInfo  .aboutInfo-props .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutMe .container .aboutInfo .aboutInfo-props .img img{
+    padding: auto;
+    margin: auto;
+    width: 80%;
+    height:80%;
+}
+
+.aboutMe .container .aboutMe-text{
+    clear: both;
+}
+
+.aboutMe .container .aboutMe-text #description{
+    width: 70%;
+    margin: 0% 15% 0% 15%;
+}
+
+
+.aboutMe .container .aboutMe-text #description p{
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.aboutMe .container .background-img img{
+    margin-top: 0px;
+    display: block;
+    background-size: contain;
+    position:absolute;
+    z-index: -1;
+    color: white;
+    background-size: cover;
+    opacity:0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.description{
+    padding-bottom: 100px;
+}
+
+/* 技能展示 */
+
+
+
+.skillShow{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.skillShow  #skillbackground-img img{
+    margin-top: 0px;
+    display: block;
+    background-size: contain;
+    position:absolute;
+    z-index: -1;
+    color: white;
+    background-size: cover;
+    opacity:0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.skillShow .skillShow-Warp .skillShow-inner{
+    margin-top:20% ;
+
+}
+
+
+.skillShow .skillShow-Warp .skillShow-inner .skilllist {
+    margin-top: -100px;
+    margin-left: 20%;
+    position: absolute;
+    width: 50%;
+}
+
+.skillShow .skillShow-Warp .skillShow-inner .skilllist li{
+    list-style: none;
+    float: left;
+    padding-left: 10%;
+    font-size: 120%;
+    height: 100px;
+}
+
+.skillShow .skillShow-Warp .skillShow-inner .skilllist .choiceskill1,.choiceskill2,.choiceskill3{
+    display: block;
+    padding: 38% 3% 38% 3%;
+}
+.skillShow .skillShow-Warp .skillShow-inner .skilllist li .choiceskill{
+    display: block;
+    font-size: 100%;
+    width: 120%;
+    text-align:center;
+    background-color: rgb(88, 88, 88);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius:20%;
+    z-index: 5;    
+
+}
+
+
+.skillShow .skillShow-inner .skilllist-warp{
+
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: 20%;
+    height: auto;
+    background-color: white;
+    border: 2px solid rgb(62, 60, 68);
+    opacity: 0.6;
+    padding-top: 5%;
+    border-radius:5%;
+    margin-top: 100px;
+}
+
+.skillShow .skillShow-inner .skilllist-warp .skill{
+    display: inline;
+    padding: 10%;
+}
+.skillShow .skillShow-inner .skilllist-warp .skill img{
+    padding: 3% 1.4%  3% 1.4% ;
+    width: 10%;
+    height: auto; 
+}
+
+
+.skillShow .skillShow-Warp .skillShow-inner .skilllist li .allskill{
+    border-bottom: 0px ;
+    border: 2px solid rgb(62, 60, 68);
+    background-color:white;
+}
+
+/* 个人经历 */
+.experience{
+    margin-top: 0px;;
+    position: relative;
+    display: block;
+}
+
+/* .experience .headingWarp{
+    position: absolute;
+} */
+
+.experience .container #experiencebackground-img img{
+    margin-top: 0px;
+    z-index: -1;
+    color: white;
+    opacity:0.6;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+}
+.experience .container .headingWarp p {
+    padding-top: 26px;
+    max-width: 800px;
+    text-align: justify;
+    display: block;
+    margin: 0 auto;
+    line-height: 27px;
+  }
+
+.experience .container{
+    width: 80%;
+  }
+
+
+.experience .container>*:not(#experiencebackground-img){
+    width: 100%;
+    margin-left: 10%;
+  }
+
+
+  .experience .container .row{
+      height: 20%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+  }
+
+  .experience .container .workDetails .rightArea {
+    border-left: dashed 2px black;
+    padding-bottom: 47px;
+    margin-left: 30%;
+  }
+  .experience .container .workDetails .rightArea .arrowpart {
+    margin-left: -13px;
+    margin-top: 32px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: url(../images/arrow-left.png) no-repeat 0 0 #f8f7f8;
+    border: 2px solid black;
+    border-radius:50%;
+  }
+  .experience .container .workDetails .rightArea .exCon {
+    width: auto;
+    padding: 0 47px 6px 70px;
+    margin-left: 15px;
+    text-align: left;
+  }
+  .experience .container .workDetails .rightArea .exCon p {
+    line-height: 27px;
+  }
+  .experience .container .workDetails .rightArea .exCon h4 {
+
+    padding-bottom: 1px;
+    margin-top: -8px;
+  }
+  .experience .container .workDetails .rightArea .exCon h5 {
+    padding-bottom: 11px;
+  }
+  .experience .container .workDetails .workYear {
+    font-size: 17px;
+    color: #fff;
+    line-height: 40px;
+    float: left;
+  }
+  .experience .container .workDetails .workYear span {
+    display: block;
+    font-size: 18px;
+    padding: 0 5%;
+    white-space: nowrap;
+    margin-bottom: 2px;
+    float: left;
+    margin-left: 40%;
+    font-weight: bold;
+  }
+  .experience .container .workDetails .workYear .prevY {
+    background-color: #ef7674;
+  }
+  .experience .container .workDetails .workYear .afterY {
+    background-color: #483c49;
+  }
+  .experience .container .workDetails:last-child .rightArea {
+    padding-bottom: 0px;
+  }
+  .experience .container .workDetails:last-child .rightArea .exCon p:last-child {
+    padding-bottom: 0;
+  }
+
+/* 项目经验 */
+
+.experience-pro .experience .experience-inner .heading{
+    width: 60%;
+    margin-left: 20%;
+}
+.experience-pro .experience .experience-inner .heading p{
+    margin-top: 10%;
+}
+
+.experience-pro .experience .experience-inner .row{
+    width: 80%;
+    margin-left: 10%;
+    padding: 10% 0% 5% 0% ;
+}
+
+
+.experience-pro .experience #experiencebackground-img img{
+    margin-top: 0px;
+    z-index: -1;
+    color: white;
+    opacity:0.6;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+}
+
+
+
+.experience-pro .experience .workDetails .rightArea {
+    border-left: dashed 2px black;
+    padding-bottom: 47px;
+    margin-left: 30%;
+  }
+  .experience-pro .experience .workDetails .rightArea .arrowpart {
+    margin-left: -13px;
+    margin-top: 32px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: url(../images/arrow-left.png) no-repeat 0 0 #f8f7f8;
+    border: 2px solid black;
+    border-radius:50%;
+  }
+  .experience-pro .experience .workDetails .rightArea .exCon {
+    width: auto;
+    padding: 0 47px 6px 70px;
+    margin-left: 15px;
+    text-align: left;
+  }
+  .experience-pro .experience .workDetails .rightArea .exCon p {
+    line-height: 27px;
+  }
+  .experience-pro .experience .workDetails .rightArea .exCon h4 {
+
+    padding-bottom: 1px;
+    margin-top: -8px;
+  }
+  .experience-pro .experience .workDetails .rightArea .exCon h5 {
+    padding-bottom: 11px;
+  }
+  .experience-pro .experience .workDetails .workYear {
+    font-size: 17px;
+    color: #fff;
+    line-height: 40px;
+    float: left;
+  }
+  .experience-pro .experience .workDetails .workYear span {
+    display: block;
+    font-size: 18px;
+    padding: 0 5%;
+    white-space: nowrap;
+    margin-bottom: 2px;
+    float: left;
+    margin-left: 40%;
+    font-weight: bold;
+  }
+  .experience-pro .experience .workDetails .workYear .prevY {
+    background-color: #ef7674;
+  }
+  .experience-pro .experience .workDetails .workYear .afterY {
+    background-color: #483c49;
+  }
+  .experience-pro .experience .workDetails:last-child .rightArea {
+    padding-bottom: 0px;
+  }
+  .experience-pro .experience .workDetails:last-child .rightArea .exCon p:last-child {
+    padding-bottom: 0;
+  }
+
+
+
+/* 联系我 */
+
+.contectMe {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  /* .contectMe .container {
+    padding-bottom: 90px;
+}
+   */
+.contectMe .container{
+    padding-top:-1000px;
+    background-color: white;
+    z-index: 10;
+}
+
+
+.contectMe .container .headingWarp .heading{
+    clear: both;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.contectMe .container .headingWarp .heading div{
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    background: chocolate;
+    width: 200px;
+    height: 10px;
+    text-align: center;
+}
+
+
+.contectMe .container  .headingWarp {
+    text-align: center;
+    padding-bottom: 45px;
+
+  }
+
+
+  .contectMe .background-img img{
+    position:absolute;
+    opacity:0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.externalLinks{
+    padding: 18% 0% 20% 0%;
+    clear: both;
+    width: 80%;
+    margin: auto;
+
+}
+.externalLinks li img{
+    width: 10%;
+    z-index: 101;
+}
+.externalLinks li{
+    z-index: 100;
+    display: inline;
+    list-style: none;
+    margin: 7%;
+}
+.externalLinks a,.conceaWeChat,.conceaQQ{
+    text-decoration:none;
+    height: 200px;
+    width: 10%;
+}
+
+.concealwarp{
+    margin-top: -100px;
+    opacity: 0;
+    z-index: 101;
+    /* opacity: 0; */
+}
+
+.conceal img{
+    height: 200px;
+}
+.contectMe .container .externalLinks .WeQQ{
+    display: none;
+}
+.contectMe .container .externalLinks .WeQQ .clickQQ,.clickWeChat{
+    background-color: white;
+    position:absolute;
+    display: none;
+    left: 40%;
+    top: 30%;
+    right: 40%;
+    bottom: 30%;
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid rgb(245, 47, 156);
+}
+
+.contectMe .container .externalLinks .WeQQ div img{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.contectMe .container .externalLinks .WeQQ .btn img{
+    width: 100%;
+}
+
+.contectMe .container .externalLinks .WeQQ .btn{
+    z-index: 200;
+    width: 3%;
+    position:absolute;
+    margin-top: 1.5%;
+    margin-left: -1.5%;
+}
+
+p{
+    white-space: pre-line
+}
