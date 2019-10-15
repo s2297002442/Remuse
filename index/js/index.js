@@ -89,14 +89,12 @@ $(function(){
             $(".allskill").removeClass("allskill")
             $(".choiceskill").eq(index).addClass("allskill")
         })
-        console.log(index)
     })
 
 
 
     $(".choiceskill1").click(function(event){
         $(".skill").css("display","inline")
-        console.log(event)
     })
     $(".choiceskill2").click(function(){
         $(".skillQ").css("display","inline")
@@ -106,4 +104,41 @@ $(function(){
         $(".skillH").css("display","inline")
         $(".skillQ").css("display","none")
     })
+})
+
+
+// 宽度小于1000px
+$(function(){
+    var nav
+
+    if ($("body").width() < 1000){
+
+        // 导航栏模块
+        $(".ue-bar").css("display", "none")
+        $(".nav img").css("display", "block")
+        $(".nav img").css("z-index", "301")
+        $(".header .navMenu").css("z-index","300")
+        nav = "false"
+        $(".nav img").on("click", function(event){
+            event.preventDefault();
+            if (nav == "false"){
+                $(".header .navMenu").css("display","block")
+                nav = "true"
+            }else if(nav == "true"){
+                $(".header .navMenu").css("display","none")
+                nav = "false"
+            }
+        })
+
+        // 个人经历&项目经验
+        $(".arrowpart").css("display", "none")
+        $(".rightArea .exCon").css("margin-left", "10%")
+        $(".workYear span").css("margin-left","10%")
+        $(".workYear span").css("font-size","13px")
+
+        $(".skillShow .skillShow-Warp .skillShow-inner .skilllist li").css("font-size", "50%")
+        $(".skillShow .skillShow-Warp .skillShow-inner .skilllist").css("height", "50px")
+        $(".skillShow .skillShow-Warp .skillShow-inner .skilllist").css("margin-top", "-58px")
+        $(".contectMe .container .externalLinks .WeQQ .btn").css("margin-top","-12%")
+    }
 })

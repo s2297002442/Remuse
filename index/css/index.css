@@ -33,13 +33,13 @@
 }
 
 .header .navMenu{
+    position: fixed;
     margin-top:60px ;
     padding:40px 0px 30px 0;
     opacity:0.4;
     right: 0;
     top: 0;
     background-color: #ffffff;
-    position:absolute;
     width: 30%;
     height: 60%;
     left: right;
@@ -249,16 +249,18 @@
 }
 
 .skillShow .skillShow-Warp .skillShow-inner{
-    margin-top:20% ;
+    padding-top:15% ;
 
 }
 
 
 .skillShow .skillShow-Warp .skillShow-inner .skilllist {
-    margin-top: -100px;
     margin-left: 20%;
+    display: block;
     position: absolute;
     width: 50%;
+    height: 100px;
+    margin-top: -100px;
 }
 
 .skillShow .skillShow-Warp .skillShow-inner .skilllist li{
@@ -266,7 +268,8 @@
     float: left;
     padding-left: 10%;
     font-size: 120%;
-    height: 100px;
+    height: 50%;
+
 }
 
 .skillShow .skillShow-Warp .skillShow-inner .skilllist .choiceskill1,.choiceskill2,.choiceskill3{
@@ -290,15 +293,14 @@
 
     width: 60%;
     height: auto;
-    display: block;
+    display: absolute;
     margin-left: 20%;
     height: auto;
     background-color: white;
     border: 2px solid rgb(62, 60, 68);
     opacity: 0.6;
-    padding-top: 5%;
     border-radius:5%;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .skillShow .skillShow-inner .skilllist-warp .skill{
@@ -371,7 +373,7 @@
     margin-left: 30%;
   }
   .experience .container .workDetails .rightArea .arrowpart {
-    margin-left: -13px;
+    margin-left: -2%;
     margin-top: 32px;
     float: left;
     width: 22px;
@@ -382,7 +384,7 @@
   }
   .experience .container .workDetails .rightArea .exCon {
     width: auto;
-    padding: 0 47px 6px 70px;
+    padding: 5% 5% 5% 5%;
     margin-left: 15px;
     text-align: left;
   }
@@ -473,7 +475,7 @@
   }
   .experience-pro .experience .workDetails .rightArea .exCon {
     width: auto;
-    padding: 0 47px 6px 70px;
+    padding: 5% 5% 5% 5%;
     margin-left: 15px;
     text-align: left;
   }
@@ -584,7 +586,7 @@
     z-index: 100;
     display: inline;
     list-style: none;
-    margin: 7%;
+    margin: 5%;
 }
 .externalLinks a,.conceaWeChat,.conceaQQ{
     text-decoration:none;
@@ -613,9 +615,9 @@
     left: 40%;
     top: 30%;
     right: 40%;
-    bottom: 30%;
+    bottom: 40%;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
     border: 2px solid rgb(245, 47, 156);
 }
 
@@ -632,7 +634,8 @@
     z-index: 200;
     width: 3%;
     position:absolute;
-    margin-top: 1.5%;
+    display: absolute;
+    margin-top: -8%;
     margin-left: -1.5%;
 }
 
