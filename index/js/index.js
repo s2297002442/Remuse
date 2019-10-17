@@ -45,25 +45,24 @@ $(function(){
     $(".conceaQQ").click(function(){
         $(".contectMe .container .externalLinks .WeQQ").css("display","block")
         $(".contectMe .container .externalLinks .WeQQ .clickQQ").css("display","block")
-        clickQQ = true
+        $(".btnQQ img").css("display","block")
     })
 
     $(".conceaWeChat").click(function(){
         $(".contectMe .container .externalLinks .WeQQ").css("display","block")
         $(".contectMe .container .externalLinks .WeQQ .clickWeChat").css("display","block")
-        clickWeChat = true
+        $(".btnWeChat img").css("display","block")
     })
 
-    $(".btn").click(function(){
-        if (clickQQ){
-            $(".contectMe .container .externalLinks .WeQQ").css("display","none")
-            $(".contectMe .container .externalLinks .WeQQ .clickQQ").css("display","none")
-            clickQQ = false
-        }else if(clickWeChat){
-            $(".contectMe .container .externalLinks .WeQQ").css("display","none")
-            $(".contectMe .container .externalLinks .WeQQ .clickWeChat").css("display","none")
-            clickWeChat = false
-        }
+    $(".btnWeChat").click(function(){
+        $(".contectMe .container .externalLinks .WeQQ").css("display","none")
+        $(".contectMe .container .externalLinks .WeQQ .clickWeChat").css("display","none")
+        $(".btnWeChat img").css("display","none")
+        })
+    $(".btnQQ").click(function(){
+        $(".contectMe .container .externalLinks .WeQQ").css("display","none")
+        $(".contectMe .container .externalLinks .WeQQ .clickQQ").css("display","none")
+        $(".btnQQ img").css("display","none")
     })
     // .contectMe .container .externalLinks .WeQQ .btn
 })
@@ -140,5 +139,12 @@ $(function(){
         $(".skillShow .skillShow-Warp .skillShow-inner .skilllist").css("height", "50px")
         $(".skillShow .skillShow-Warp .skillShow-inner .skilllist").css("margin-top", "-58px")
         $(".contectMe .container .externalLinks .WeQQ .btn").css("margin-top","-12%")
+
+        //联系我弹窗尺寸
+        $(".contectMe .container .externalLinks .WeQQ .clickQQ,.clickWeChat").css("bottom","35%")
+        $(".contectMe .container .externalLinks .WeQQ .clickQQ,.clickWeChat").css("left","30%")
+        $(".contectMe .container .externalLinks .WeQQ .clickQQ,.clickWeChat").css("right","30%")
+        $(".btnQQ img").css("margin-top","-10%")
+        $(".btnWeChat img").css("margin-top","-20%")
     }
 })

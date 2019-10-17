@@ -188,7 +188,13 @@
     padding: auto;
     margin: auto;
     width: 80%;
-    height:80%;
+    height:auto;
+}
+
+
+.aboutInfo-find .img{
+    display: block;
+    padding: 20% 0% 20% 0%;
 }
 
 .aboutMe .container .aboutMe-text{
@@ -373,7 +379,7 @@
     margin-left: 30%;
   }
   .experience .container .workDetails .rightArea .arrowpart {
-    margin-left: -2%;
+    margin-left: -13px;
     margin-top: 32px;
     float: left;
     width: 22px;
@@ -382,6 +388,18 @@
     border: 2px solid black;
     border-radius:50%;
   }
+
+  .experience .container .workDetails .rightArea .arrowpart:hover {
+    margin-left: -13px;
+    margin-top: 32px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background:  no-repeat 0 0 #f8f7f8;
+    border: 3px solid rgb(255, 5, 5);
+    border-radius:50%;
+  }
+
   .experience .container .workDetails .rightArea .exCon {
     width: auto;
     padding: 5% 5% 5% 5%;
@@ -473,6 +491,19 @@
     border: 2px solid black;
     border-radius:50%;
   }
+
+  .experience-pro .experience .workDetails .rightArea .arrowpart:hover{
+    margin-left: -13px;
+    margin-top: 32px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background:  no-repeat 0 0 #f8f7f8;
+    border: 3px solid rgb(255, 5, 5);
+    border-radius:50%;
+  }
+
+
   .experience-pro .experience .workDetails .rightArea .exCon {
     width: auto;
     padding: 5% 5% 5% 5%;
@@ -615,7 +646,7 @@
     left: 40%;
     top: 30%;
     right: 40%;
-    bottom: 40%;
+    bottom: 28%;
     padding: 0px;
     margin: auto;
     border: 2px solid rgb(245, 47, 156);
@@ -626,18 +657,24 @@
     padding: 0px;
     margin: 0px;
 }
-.contectMe .container .externalLinks .WeQQ .btn img{
-    width: 100%;
-}
 
-.contectMe .container .externalLinks .WeQQ .btn{
+.contectMe .container .externalLinks .WeQQ .btnWeChat img {
     z-index: 200;
     width: 3%;
     position:absolute;
-    display: absolute;
-    margin-top: -8%;
+    display: none;
+    margin-top: 0%;
     margin-left: -1.5%;
 }
+.contectMe .container .externalLinks .WeQQ .btnQQ img{
+    z-index: 200;
+    width: 3%;
+    position:absolute;
+    display: none;
+    margin-top: 4%;
+    margin-left: -1.5%;
+}
+
 
 p{
     white-space: pre-line
