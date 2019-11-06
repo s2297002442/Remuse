@@ -1,7 +1,7 @@
 
 
 const http = require("http");
-const fs = require("fs");
+var fs = require('fs');
 const path = require("path");
 const url = require("url");
 const server = http.createServer();
@@ -21,25 +21,13 @@ server.on("request",function(req,res){
       }
     })
   }else{
-    switch(path.extname(urls.pathname)){
-      case ".css":
-          res.readFile("./index/css/css.js");
-          console.log(urls.pathname.split()[-1])
-          break;
-      case ".gif":
-          res.readFile("./index/img/css.js");
-          break;
-      case ".jpg":
-          res.readFile("./index/css/css.js");
-          break;
-      case ".png":
-          console.log(urls.pathname.split()[-1]);
-          break;
-      case ".svg":
-          console.log(urls.pathname.split()[-1]);
-          break;
-      default:
-          console.log(urls.pathname.split()[-1])
-  }
+    fs.readFile("./index"+urls.pathname,function(err,data){
+      if(!err){
+        res.end(data)
+      }else{
+        console.log(err)
+      }
+
+    })
   }
 })

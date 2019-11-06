@@ -170,7 +170,6 @@
     width: 20%;
     margin: 100px auto;
     padding:  0% 2% 0% 2%;
-
 }
 
 .aboutMe .container .row .aboutInfo .aboutInfo-props .text{
@@ -180,6 +179,8 @@
 }
 
 .aboutMe .container .aboutInfo  .aboutInfo-props .img{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,10 +193,6 @@
 }
 
 
-.aboutInfo-find .img{
-    display: block;
-    padding: 20% 0% 20% 0%;
-}
 
 .aboutMe .container .aboutMe-text{
     clear: both;
@@ -675,7 +672,15 @@
     margin-left: -1.5%;
 }
 
-
+#fotter {
+    height: 100px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+#fotter div{
+    padding-top: 30px;
+}
 p{
     white-space: pre-line
 }
